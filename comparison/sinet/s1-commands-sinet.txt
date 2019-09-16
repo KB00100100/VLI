@@ -1,0 +1,4 @@
+table_set_default ipv4_sinet drop
+table_set_default sinet_ipv4 drop
+table_add ipv4_sinet ipv4_sinet_forward 10.0.2.2/32 => 00:00:00:02:02:00 7 0xff 7 0x0f 2
+table_add sinet_ipv4 sinet_ipv4_forward 0xff/8 => 00:00:00:00:01:01 1

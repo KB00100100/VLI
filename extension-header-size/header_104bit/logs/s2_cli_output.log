@@ -1,0 +1,20 @@
+Obtaining JSON from switch...
+Done
+Control utility for runtime P4 table manipulation
+RuntimeCmd: Setting default action of ipv4_sinet
+action:              drop
+runtime data:        
+RuntimeCmd: Setting default action of sinet_ipv4
+action:              drop
+runtime data:        
+RuntimeCmd: Adding entry to lpm match table ipv4_sinet
+match key:           LPM-0a:00:01:01/32
+action:              ipv4_sinet_forward
+runtime data:        00:00:00:01:01:00	ff	0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f	ff	ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00:ff:00	00:02
+Entry has been added with handle 0
+RuntimeCmd: Adding entry to lpm match table sinet_ipv4
+match key:           LPM-0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f:0f/256
+action:              sinet_ipv4_forward
+runtime data:        00:00:00:00:02:02	00:01
+Entry has been added with handle 0
+RuntimeCmd: 

@@ -1,0 +1,4 @@
+table_set_default ipv4_ipv6 drop
+table_set_default ipv6_ipv4 drop
+table_add ipv4_ipv6 ipv4_ipv6_forward 10.0.2.2/32 => 00:00:00:02:02:00 0xfe800000000000000000000000001234 0xfe800000000000000000000000005678 2
+table_add ipv6_ipv4 ipv6_ipv4_forward fe80::1234/128 => 00:00:00:00:01:01 1

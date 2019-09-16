@@ -1,0 +1,4 @@
+table_set_default ipv4_sinet drop
+table_set_default sinet_ipv4 drop
+table_add ipv4_sinet ipv4_sinet_forward 10.0.1.1/32 => 00:00:00:01:01:00 239 0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0000 239 0xff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff000000 2
+table_add sinet_ipv4 sinet_ipv4_forward 0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0000/256 => 00:00:00:00:02:02 1
